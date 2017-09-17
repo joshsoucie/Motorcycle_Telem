@@ -55,7 +55,7 @@ void serialEvent (Serial fd)
     String[] list = split(rpstr, '\t');
     //print("test: ", list[3]);
     pitch = ((int)float(list[1]));
-    roll = ((int)float(list[2]));
-    heading = ((int)float(list[3]));
+    roll = ((int)float(list[0]));
+    heading = ((int)float(list[2]));
   }
 }

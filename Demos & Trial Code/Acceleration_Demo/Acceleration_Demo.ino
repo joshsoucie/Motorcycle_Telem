@@ -24,11 +24,11 @@
 */
 
 //Contains the bridge code between the API and the Arduino Environment
-#include "NAxisMotion.h"
-#include <Wire.h>
+#include "NineAxesMotion.h"        //Contains the bridge code between the API and the Arduino Environment
+//#include <Wire.h>
 
 //Object that for the sensor
-NAxisMotion mySensor;
+NineAxesMotion mySensor;
 
 //To store the last streamed time stamp
 unsigned long lastStreamTime = 0;

@@ -44,10 +44,10 @@
 * patent rights of the copyright holder. 
 */
 
-#include "NAxisMotion.h"        //Contains the bridge code between the API and the Arduino Environment
-#include <Wire.h>
+#include "NineAxesMotion.h"        //Contains the bridge code between the API and the Arduino Environment
+//#include <Wire.h>
 
-NAxisMotion mySensor;         //Object that for the sensor 
+NineAxesMotion mySensor;         //Object that for the sensor 
 unsigned long lastStreamTime = 0;     //To store the last streamed time stamp
 const int streamPeriod = 40;          //To stream at 50Hz without using additional timers (time period(ms) =1000/frequency(Hz))
 bool updateSensorData = true;         //Flag to update the sensor data. Default is true to perform the first read before the first stream

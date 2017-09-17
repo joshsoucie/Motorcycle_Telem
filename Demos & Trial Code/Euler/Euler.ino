@@ -1,3 +1,5 @@
+
+
 /****************************************************************************
 * Copyright (C) 2011 - 2014 Bosch Sensortec GmbH
 *
@@ -44,10 +46,12 @@
 * patent rights of the copyright holder. 
 */
 
-#include "NAxisMotion.h"        //Contains the bridge code between the API and the Arduino Environment
-#include <Wire.h>
+#include "NineAxesMotion.h"        //Contains the bridge code between the API and the Arduino Environment
 
-NAxisMotion mySensor;         //Object that for the sensor 
+//#include "NAxisMotion.h"        //Contains the bridge code between the API and the Arduino Environment
+//#include <Wire.h>
+
+NineAxesMotion mySensor;         //Object that for the sensor 
 unsigned long lastStreamTime = 0;     //To store the last streamed time stamp
 const int streamPeriod = 20;          //To stream at 50Hz without using additional timers (time period(ms) =1000/frequency(Hz))
 
